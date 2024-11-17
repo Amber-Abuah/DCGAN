@@ -1,4 +1,6 @@
 ## DCGAN
+![AnimeReel](https://github.com/user-attachments/assets/4380a2b2-fec1-4794-a31f-aef077e93f1b)
+
 Deep Convolutional Generative Adversarial Network (DCGAN) inspired by [PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN/blob/master/implementations/dcgan/dcgan.py) and [DCGAN Tutorial](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html).
 
 Trained to generate 64x64 anime faces from [20,000 training images](https://huggingface.co/datasets/huggan/anime-faces).
