@@ -1,14 +1,10 @@
 ## DCGAN
 ![AnimeReel](https://github.com/user-attachments/assets/4380a2b2-fec1-4794-a31f-aef077e93f1b)
 
-Deep Convolutional Generative Adversarial Network (DCGAN) inspired by [PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN/blob/master/implementations/dcgan/dcgan.py) and [DCGAN Tutorial](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html).
-
-Trained to generate 64x64 anime faces from [20,000 training images](https://huggingface.co/datasets/huggan/anime-faces).
-
-Mixed precision training to speed up training times.
+Deep Convolutional Generative Adversarial Network (DCGAN) inspired by [PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN/blob/master/implementations/dcgan/dcgan.py) and [DCGAN Tutorial](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html), trained to generate 64x64 anime faces from [20,000 training images](https://huggingface.co/datasets/huggan/anime-faces) over 500 epochs. Mixed precision training was used to speed up training times.
 
 ### Generator Architecture
-- Linear (Latent Dim -> Img size / 8 ** 2)
+- Linear (Latent Dim -> (Img size / 8) ** 2)
 - BatchNorm2d
 - ConvTranspose2d (256 -> 128)
 - BatchNorm2d
